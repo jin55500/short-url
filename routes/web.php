@@ -17,7 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('test');
+    // return view('home');
 })->name('home')->middleware('auth');
 
 Route::group(['prefix' => 'auth'], function () {
