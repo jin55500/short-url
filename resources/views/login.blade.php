@@ -13,6 +13,7 @@
 
     <form method="POST" action="{{ route('login-submit') }}">
         @csrf
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="row  justify-content-center">
             <div class="col-md-6">
                 <div class="row mb-3">
